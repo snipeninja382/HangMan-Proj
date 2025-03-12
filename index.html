@@ -7,16 +7,25 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Hangman</h1>
-    <p>Find out the phrase</p>
-    <div class="game">
-      <input type="text" id="guess" placeholder="Enter your guess" minlength="1" maxlength="1" required>
-      <button onclick="checkGuess()">Submit Guess</button>
+  <div class = "Main-container">
+    <div class="container">
+      <h1>Hangman</h1>
+      <p>What's the Phrase!</p>
+
+      <p id="feedback"></p>
+      <div class="game">
+        <input type="text" id="guess" placeholder="Enter your guess" minlength="1" maxlength="1" required>
+        <button onclick="checkGuess()" id="checkGuessButton">Submit Guess</button><br>
+        <button onclick="instructions()" class="center">How To Play</button>
+      </div>
+      
     </div>
-    <p id="feedback"></p>
-    <input type="text" id="phrase" placeholder="Enter your phrase" min="1" max="100" required> 
-    <button onclick="startGame()">start Game</button><br><br>
+    <div class="container2">
+      <p id="feedback2"></p>
+      <input type="text" id="phrase" placeholder="Enter your phrase" min="1" max="100" required> 
+      <button onclick="startGame()">Start Game</button><br>
+    </div>
+</div>
   <script src="script.js"></script>
 </body>
 </html>
